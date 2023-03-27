@@ -874,10 +874,6 @@ noscript {
 	color: #d00000;
 }
 
-::selection {
-	background: rgb(0 100 193 / 25%);
-}
-
 @media (prefers-color-scheme: dark) {
 	html {
 		background: black;
@@ -1216,9 +1212,5 @@ noscript {
 
 	noscript {
 		color: #5afffe;
-	}
-
-	::selection {
-		background: rgb(253 154 73 / 25%);
 	}
 }
