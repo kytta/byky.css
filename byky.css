@@ -6,18 +6,25 @@
  * © 2015 Igor Adamenko (https://igoradamenko.com)
  * Licensed under ISC (https://github.com/kytta/byky.css/blob/main/LICENSE)
  */
+
+:root {
+	--byky-fg: black;
+	--byky-bg: white;
+	--byky-fg-muted: #666;
+	--byky-banner: #f0f0f0;
+}
+
 html {
 	font-family: "Helvetica Neue", Helvetica, FreeSans, "Nimbus Sans L", Inter,
 		system-ui, sans-serif;
 	font-size: 100%;
 	line-height: 1.4;
-	background: white;
-	color: black;
-	-webkit-overflow-scrolling: touch;
+	background: var(--byky-bg);
+	color: var(--byky-fg);
 }
 
 body {
-	margin: 1.2em;
+	margin: 0 0 1.2em;
 	font-size: 1rem;
 }
 
@@ -31,6 +38,36 @@ body {
 	body {
 		font-size: 1.125rem;
 	}
+}
+
+body > .byky {
+	background-color: var(--byky-banner);
+	padding: 0.5rem 0;
+	margin-bottom: 1.2em;
+	color: var(--byky-fg-muted);
+	display: block;
+	text-decoration: none;
+}
+
+body > .byky:visited {
+	color: currentcolor;
+}
+
+body > .byky p {
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 0.9rem;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 8px;
+}
+
+body > .byky p img {
+	margin: 0;
+	padding: 0;
 }
 
 body header,
